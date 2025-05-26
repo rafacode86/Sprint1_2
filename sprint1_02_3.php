@@ -39,16 +39,16 @@
 
     # Calculadora.
 
-    $numero1 = 3;
-    $numero2 = 2;
-
     $operador = "*";
-
-    echo match ($operador) {
+    function calculadora($numero1, $numero2, $operador) {
+        echo match ($operador) {
         "*" => $numero1 * $numero2 . "\n",
         "+" => $numero2 + $numero1 . "\n",
         "-" => $numero1 - $numero2 ,
         "/" => $numero1 / $numero2,
-    };
+        };
+    }
 
+
+    calculadora(10, 5, "+")
 ?>
